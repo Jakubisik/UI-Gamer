@@ -16,7 +16,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: #333;
+  background-color: #222228;
+  overflow: hidden;
 }
 /*
 @media (min-width: 768px) {
@@ -59,19 +60,31 @@ body {
   padding-left: 1rem;
 }
 
-.img__hand::before {
+.img-hand__heading {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index: -1;
+  top: -5rem;
+  right: -44rem;
+  font-size: 60rem;
+  text-stroke: 5px #262631;
+  -webkit-text-stroke: 5px #262631;
+  -webkit-text-fill-color: transparent;
 }
 
 .img__hand {
   position: absolute;
-  right: 8rem;
-  height: 80%;
+  top: 0;
+  right: 18rem;
+  height: 73%;
+  z-index: 1;
 }
 
 .nav__container {
   margin-top: 3rem;
   position: absolute;
-  z-index: 2;
+  z-index: 22;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -116,13 +129,14 @@ body {
   display: inline-block;
   transform: rotate(3deg);
 }
-
 .text__header--p {
   font-size: 2rem;
   padding-top: 4rem;
 }
 
 .container__boxy {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   margin-top: 3rem;
@@ -184,4 +198,24 @@ body {
   display: inline-block;
   font-size: 2rem;
   transform: scaleX(2);
+}
+
+.belt__container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: right;
+  align-items: center;
+  background-color: #262631;
+  top: 11rem;
+  left: -40rem;
+  gap: 40rem;
+  z-index: -1;
+  height: 24rem;
+}
+
+.belt__container--sec-half {
+  padding: 3rem;
+  padding-right: 8rem;
+  grid-column: 2 / 3;
 }
