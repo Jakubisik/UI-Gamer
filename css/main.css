@@ -14,10 +14,7 @@ html {
 body {
   color: #fff;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   background-color: #222228;
-  overflow: hidden;
 }
 /*
 @media (min-width: 768px) {
@@ -42,10 +39,14 @@ body {
 }
 */
 .hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
   margin: 0 auto;
   max-width: 1600px;
   padding: 0px 8rem;
-  position: relative;
 }
 
 .logo {
@@ -83,11 +84,7 @@ body {
 
 .nav__container {
   margin-top: 3rem;
-  position: absolute;
-  z-index: 22;
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
   padding: 0 8rem;
 }
 
@@ -109,11 +106,6 @@ body {
   font-size: 1.7rem;
   font-weight: 600;
   padding: 0 3rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
 }
 
 .text__header {
