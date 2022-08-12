@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
   background-color: #222228;
 }
-/*
+
 @media (min-width: 768px) {
   .hero {
     padding: 0px 3rem;
@@ -37,7 +37,7 @@ body {
     padding: 0px 12rem;
   }
 }
-*/
+
 .hero {
   position: relative;
   overflow: hidden;
